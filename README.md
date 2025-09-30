@@ -31,19 +31,22 @@ Source job description dataset: [Kaggle](https://www.kaggle.com/datasets/kshitiz
 > The file uploader is still quite unstable in Streamlit deployment. I do not recommend using it.
 
 **Starting screen:**
-![Screenshot_125](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/3a7122d5-1c8e-4d98-bb06-cbc28813a2c3)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4f9bdcae-50ca-454d-95ea-ff0d03babf83" />
+
 
 **The system's example response when receiving a job description:**
-![Screenshot_128](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/d3e47a4e-257c-47d6-a12e-73e48dacc137)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/87057e60-0bfb-4bf8-a8ba-0510fbc68b8e" />
+
 
 **The system's example response when receiving specific applicant IDs**
-![Screenshot_127](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/94081148-b99f-40d9-b665-b5cbb7e15123)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b004e1d8-06a0-43f8-b635-40a559899f76" />
+
 
 ## System Description
 
 ### 1. Chatbot Structure
 
-![chatbot_structure](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/dc97c06c-ca5d-4882-8e78-9101d528ee75)
+![chatbot_structure](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/dc97c06c-ca5d-4882-8e78-9101d528ee75) 
 
 The deployed chatbot utilizes certain techniques to be more suitable for real-world use cases:
 
