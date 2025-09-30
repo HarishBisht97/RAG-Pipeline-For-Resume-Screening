@@ -21,12 +21,9 @@ RAG-like frameworks are great tools to enhance the reliability of chatbots. Over
 
 On the other hand, RAG Fusion is effective in addressing complex and ambiguous human-written prompts. While the LLM generator can handle this problem effectively, the retriever may struggle to find relevant documents when presented with multifaceted queries. Therefore, this technique can be used to improve resume retrieval quality when the system receives complex job descriptions (which are quite common in hiring).
 
-> [!NOTE]
-> For more info, please refer to the paper: [Google Drive](https://drive.google.com/drive/folders/19pL-MNfPUVsxePHd8FDvddnoC3S_zNFN?usp=drive_link)
-
 ## Demo
 
-Default synthetic resume data set used in the demo: [GitHub](https://github.com/Hungreeee/Resume-Screening-RAG-Pipeline/blob/main/data/main-data/synthetic-resumes.csv)
+Default synthetic resume data set used in the demo: [GitHub](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/blob/main/data/main-data/synthetic-resumes.csv)
 
 Source job description dataset: [Kaggle](https://www.kaggle.com/datasets/kshitizregmi/jobs-and-job-description)
 
@@ -34,19 +31,19 @@ Source job description dataset: [Kaggle](https://www.kaggle.com/datasets/kshitiz
 > The file uploader is still quite unstable in Streamlit deployment. I do not recommend using it.
 
 **Starting screen:**
-![Screenshot_125](https://github.com/Hungreeee/Resume-Screening-RAG-Pipeline/assets/46376260/3a7122d5-1c8e-4d98-bb06-cbc28813a2c3)
+![Screenshot_125](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/3a7122d5-1c8e-4d98-bb06-cbc28813a2c3)
 
 **The system's example response when receiving a job description:**
-![Screenshot_128](https://github.com/Hungreeee/Resume-Screening-RAG-Pipeline/assets/46376260/d3e47a4e-257c-47d6-a12e-73e48dacc137)
+![Screenshot_128](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/d3e47a4e-257c-47d6-a12e-73e48dacc137)
 
 **The system's example response when receiving specific applicant IDs**
-![Screenshot_127](https://github.com/Hungreeee/Resume-Screening-RAG-Pipeline/assets/46376260/94081148-b99f-40d9-b665-b5cbb7e15123)
+![Screenshot_127](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/94081148-b99f-40d9-b665-b5cbb7e15123)
 
 ## System Description
 
 ### 1. Chatbot Structure
 
-![chatbot_structure](https://github.com/Hungreeee/Resume-Screening-RAG-Pipeline/assets/46376260/dc97c06c-ca5d-4882-8e78-9101d528ee75)
+![chatbot_structure](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/dc97c06c-ca5d-4882-8e78-9101d528ee75)
 
 The deployed chatbot utilizes certain techniques to be more suitable for real-world use cases:
 
@@ -61,7 +58,7 @@ The deployed chatbot utilizes certain techniques to be more suitable for real-wo
 
 ### 2. Under-the-hood RAG Pipeline
 
-![Encoder (1)](https://github.com/Hungreeee/Resume-Screening-RAG-Pipeline/assets/46376260/4259837e-9e2c-40f8-8276-e9469667b98b)
+![Encoder (1)](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/4259837e-9e2c-40f8-8276-e9469667b98b)
 
 The pipeline begins by processing resumes into a vector storage. Upon receiving the input job descriptions query, the LLM agent is prompted to generate sub-queries. The vector storage then performs a retrieval process for each given query to return the top-K most similar documents. The document list for each sub-query is then combined and re-ranked into a new list, representing the most similar documents to the original job description. The LLM then utilizes the retrieved applicants' information as context to form accurate, relevant, and informative responses to assist hiring managers in matching resumes with job descriptions.
 
@@ -71,7 +68,7 @@ To set up the project locally:
 
 ```
 # Clone the project
-git clone https://github.com/Hungreeee/Resume-Screening-RAG-Pipeline.git
+git clone https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline.git
 
 # Install dependencies
 pip install requirements.txt
@@ -83,12 +80,6 @@ To run the Streamlit demo locally:
 streamlit run demo/interface.py
 ```
 
-## Contributions
-
-The design of the demo chatbot is relatively simple because it only serves to show the bigger picture of the potential of RAG-like systems in the recruitment domain. As such, the system is still very much a work in progress and any suggestion, feedback, or contribution is highly appreciated! Please share them at [Issue](https://github.com/Hungreeee/Resume-Screening-RAG-Pipeline/issues).
-
 ## Acknowledgement
 
 - Inspired by [RAG Fusion](https://github.com/Raudaschl/rag-fusion)
-
-# RAG-Pipeline-For-Resume-Screening
