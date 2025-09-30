@@ -46,7 +46,7 @@ Source job description dataset: [Kaggle](https://www.kaggle.com/datasets/kshitiz
 
 ### 1. Chatbot Structure
 
-![chatbot_structure](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/dc97c06c-ca5d-4882-8e78-9101d528ee75) 
+<img width="3364" height="1216" alt="image" src="https://github.com/user-attachments/assets/3f30286b-906e-4c3b-9ff5-08ed514977ea" />
 
 The deployed chatbot utilizes certain techniques to be more suitable for real-world use cases:
 
@@ -61,7 +61,7 @@ The deployed chatbot utilizes certain techniques to be more suitable for real-wo
 
 ### 2. Under-the-hood RAG Pipeline
 
-![Encoder (1)](https://github.com/HarishBisht97/Resume-Screening-RAG-Pipeline/assets/46376260/4259837e-9e2c-40f8-8276-e9469667b98b)
+<img width="2808" height="1637" alt="image" src="https://github.com/user-attachments/assets/aba7f625-7fee-4dc6-90c0-14d32caaf791" />
 
 The pipeline begins by processing resumes into a vector storage. Upon receiving the input job descriptions query, the LLM agent is prompted to generate sub-queries. The vector storage then performs a retrieval process for each given query to return the top-K most similar documents. The document list for each sub-query is then combined and re-ranked into a new list, representing the most similar documents to the original job description. The LLM then utilizes the retrieved applicants' information as context to form accurate, relevant, and informative responses to assist hiring managers in matching resumes with job descriptions.
 
